@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(flutter --version)",
+      "Bash(dart --version)",
+      "Bash(flutter pub *)",
+      "Bash(find ~/.pub-cache ~/AppData -type d -name \"fl_chart*\" 2>/dev/null | head; ls \"C:/Users/Janak/AppData/Local/Pub/Cache/hosted/pub.dev\" 2>/dev/null | grep fl_chart)",
+      "Read(//c/Users/Janak/**)",
+      "Read(//c/Users/Janak/AppData/Local/Pub/Cache/hosted/pub.dev/**)",
+      "Bash(find ~/AppData/Local/Pub/Cache/hosted -maxdepth 1 -name \"fl_chart*\" -type d 2>/dev/null; find / -maxdepth 8 -path \"*fl_chart-0.69*/lib/src/chart/bar_chart/bar_chart_data.dart\" 2>/dev/null | head -1)",
+      "Read(//c//**)",
+      "Bash(flutter analyze *)",
+      "Bash(flutter test *)",
+      "Bash(flutter build *)"
+    ]
+  }
+}
