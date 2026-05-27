@@ -74,7 +74,7 @@ class _LoanDetailScreenState extends ConsumerState<LoanDetailScreen> {
           children: [
             _subHeader(loan),
             const TabBar(
-              labelColor: AppColors.tealPrimary,
+              labelColor: AppColors.navyPrimary,
               unselectedLabelColor: AppColors.textTertiary,
               indicatorColor: AppColors.tealPrimary,
               tabs: [

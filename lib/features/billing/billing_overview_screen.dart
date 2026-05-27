@@ -125,7 +125,7 @@ class BillingOverviewScreen extends ConsumerWidget {
             if (isCurrent) {
               action = 'Current';
               bg = AppColors.navyLight;
-              fg = AppColors.indigoSoft;
+              fg = AppColors.navyPrimary;
             } else if (p.credits > 500) {
               action = 'Upgrade';
               bg = AppColors.tealLight;
@@ -207,7 +207,7 @@ class _CompactBillingRow extends StatelessWidget {
     final positive = row.amount > 0;
     final color = positive
         ? AppColors.successPrimary
-        : (row.type == 'refund' ? AppColors.errorPrimary : AppColors.indigoSoft);
+        : (row.type == 'refund' ? AppColors.errorPrimary : AppColors.navyPrimary);
     final amt = '${positive ? '+' : '-'}${Fmt.money(row.amount.abs())}';
     return AppCard(
       padding: const EdgeInsets.all(AppSpacing.md),

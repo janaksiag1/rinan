@@ -133,7 +133,7 @@ class _RateCard extends StatelessWidget {
           Row(
             children: [
               AppChip(rate.loanType, bg: AppColors.navyLight,
-                  fg: AppColors.indigoSoft),
+                  fg: AppColors.navyPrimary),
               const SizedBox(width: AppSpacing.sm),
               MonoText('${rate.ratePct}%',
                   style: AppText.headingLG, color: AppColors.tealPrimary),

@@ -32,18 +32,9 @@ class AppAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
-      backgroundColor: Colors.transparent,
+      backgroundColor: AppColors.navyPrimary,
       foregroundColor: AppColors.textPrimary,
       elevation: 0,
-      flexibleSpace: const DecoratedBox(
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-            colors: [AppColors.gradientTop, AppColors.gradientBottom],
-          ),
-        ),
-      ),
       automaticallyImplyLeading: showBack && leading == null,
       leading: leading,
       title: titleWidget ?? Text(title, style: AppText.headingLG),

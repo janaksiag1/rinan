@@ -24,7 +24,7 @@ class KycOverviewScreen extends StatelessWidget {
             const SizedBox(height: AppSpacing.lg),
             const InfoBox(
               bg: AppColors.navyLight,
-              fg: AppColors.textPrimary,
+              fg: AppColors.navyPrimary,
               icon: Icons.verified_user,
               text:
                   'KYC Required — Verify your identity to send loan offers.',

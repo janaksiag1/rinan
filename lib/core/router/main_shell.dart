@@ -53,14 +53,14 @@ class MainShell extends ConsumerWidget {
       bottomNavigationBar: NavigationBar(
         selectedIndex: index,
         backgroundColor: AppColors.bgSecondary,
-        indicatorColor: AppColors.tealPrimary.withValues(alpha: 0.18),
+        indicatorColor: AppColors.navyLight,
         surfaceTintColor: Colors.transparent,
         onDestinationSelected: (i) => context.go(tabs[i].route),
         destinations: [
           for (final t in tabs)
             NavigationDestination(
               icon: Icon(t.icon, color: AppColors.textTertiary),
-              selectedIcon: Icon(t.activeIcon, color: AppColors.tealPrimary),
+              selectedIcon: Icon(t.activeIcon, color: AppColors.navyPrimary),
               label: t.label,
             ),
         ],

@@ -100,7 +100,7 @@ class _BillingRowCard extends StatelessWidget {
     final positive = row.amount > 0;
     final amtColor = positive
         ? AppColors.successPrimary
-        : (row.type == 'refund' ? AppColors.errorPrimary : AppColors.indigoSoft);
+        : (row.type == 'refund' ? AppColors.errorPrimary : AppColors.navyPrimary);
     final amt = '${positive ? '+' : '-'}${Fmt.money(row.amount.abs())}';
 
     final (IconData icon, Color bg, Color fg) typeStyle;
@@ -112,7 +112,7 @@ class _BillingRowCard extends StatelessWidget {
         typeStyle = (Icons.replay, AppColors.errorLight, AppColors.errorPrimary);
         break;
       default:
-        typeStyle = (Icons.workspace_premium_outlined, AppColors.navyLight, AppColors.indigoSoft);
+        typeStyle = (Icons.workspace_premium_outlined, AppColors.navyLight, AppColors.navyPrimary);
     }
 
     return AppCard(

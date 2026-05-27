@@ -81,7 +81,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                   child: Icon(
                     slide.icon,
                     size: 96,
-                    color: AppColors.tealPrimary,
+                    color: AppColors.navyPrimary,
                   ),
                 ),
                 const SizedBox(height: AppSpacing.xxxl),
@@ -167,7 +167,7 @@ class _Dots extends StatelessWidget {
           width: isActive ? 24 : 8,
           height: 8,
           decoration: BoxDecoration(
-            color: isActive ? AppColors.tealPrimary : AppColors.borderMid,
+            color: isActive ? AppColors.navyPrimary : AppColors.borderMid,
             borderRadius: BorderRadius.circular(AppRadius.pill),
           ),
         );

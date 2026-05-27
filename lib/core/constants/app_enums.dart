@@ -44,7 +44,7 @@ enum LoanStatus {
   disbursed(
     'DISBURSED',
     'Disbursed',
-    AppColors.indigoSoft,
+    AppColors.navyPrimary,
     AppColors.navyLight,
   );
 

@@ -214,7 +214,7 @@ class _LivePreviewCard extends StatelessWidget {
               Row(
                 children: [
                   AppChip(loanType ?? 'Loan Type',
-                      bg: AppColors.navyLight, fg: AppColors.indigoSoft),
+                      bg: AppColors.navyLight, fg: AppColors.navyPrimary),
                   const Spacer(),
                   if (label.isNotEmpty)
                     AppChip(label,

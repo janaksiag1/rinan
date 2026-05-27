@@ -253,7 +253,7 @@ class _QuickActionCard extends StatelessWidget {
       child: Column(
         mainAxisSize: MainAxisSize.min,
         children: [
-          Icon(action.icon, size: 22, color: AppColors.tealPrimary),
+          Icon(action.icon, size: 22, color: AppColors.navyPrimary),
           const SizedBox(height: AppSpacing.sm),
           Text(
             action.label,

@@ -74,7 +74,7 @@ class _LoanPipelineScreenState extends ConsumerState<LoanPipelineScreen> {
                     label: 'All Banks',
                     count: loans.length,
                     selected: _selectedBankId == null,
-                    selectedColor: AppColors.tealPrimary,
+                    selectedColor: AppColors.navyPrimary,
                     onTap: () => setState(() => _selectedBankId = null),
                   ),
                   const SizedBox(width: AppSpacing.sm),
@@ -83,7 +83,7 @@ class _LoanPipelineScreenState extends ConsumerState<LoanPipelineScreen> {
                       label: b.shortName,
                       count: loans.where((l) => l.bankId == b.id).length,
                       selected: _selectedBankId == b.id,
-                      selectedColor: AppColors.tealPrimary,
+                      selectedColor: AppColors.navyPrimary,
                       onTap: () => setState(() => _selectedBankId = b.id),
                     ),
                     const SizedBox(width: AppSpacing.sm),
@@ -94,7 +94,7 @@ class _LoanPipelineScreenState extends ConsumerState<LoanPipelineScreen> {
             // — Status tabs with count badges —
             TabBar(
               isScrollable: true,
-              labelColor: AppColors.tealPrimary,
+              labelColor: AppColors.navyPrimary,
               unselectedLabelColor: AppColors.textTertiary,
               indicatorColor: AppColors.tealPrimary,
               labelStyle: AppText.bodyMD.copyWith(fontWeight: FontWeight.w600),

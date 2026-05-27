@@ -66,7 +66,7 @@ class _ApplicationDetailScreenState
           children: [
             _subHeader(loan),
             const TabBar(
-              labelColor: AppColors.tealPrimary,
+              labelColor: AppColors.navyPrimary,
               unselectedLabelColor: AppColors.textTertiary,
               indicatorColor: AppColors.tealPrimary,
               isScrollable: false,
@@ -977,7 +977,7 @@ class _MessagesTabState extends State<_MessagesTab> {
                 AppFilterChip(
                   label: 'In-App',
                   selected: _channel == 'inapp',
-                  selectedColor: AppColors.tealPrimary,
+                  selectedColor: AppColors.navyPrimary,
                   icon: Icons.forum_outlined,
                   onTap: () => setState(() => _channel = 'inapp'),
                 ),

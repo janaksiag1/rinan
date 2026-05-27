@@ -168,7 +168,7 @@ class SettingsScreen extends ConsumerWidget {
               ),
               ListTile(
                 contentPadding: EdgeInsets.zero,
-                leading: const Icon(Icons.language, color: AppColors.tealPrimary),
+                leading: const Icon(Icons.language, color: AppColors.navyPrimary),
                 title: Text('Language',
                     style: AppText.bodyLG.copyWith(color: AppColors.textPrimary)),
                 trailing: const AppChip('EN'),
@@ -274,7 +274,7 @@ class _NavTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       contentPadding: EdgeInsets.zero,
-      leading: Icon(icon, color: AppColors.tealPrimary),
+      leading: Icon(icon, color: AppColors.navyPrimary),
       title: Text(title,
           style: AppText.bodyLG.copyWith(color: AppColors.textPrimary)),
       trailing:

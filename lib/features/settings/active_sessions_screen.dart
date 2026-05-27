@@ -71,7 +71,7 @@ class _SessionCard extends StatelessWidget {
           Row(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Icon(_icon, size: 32, color: AppColors.tealPrimary),
+              Icon(_icon, size: 32, color: AppColors.navyPrimary),
               const SizedBox(width: AppSpacing.md),
               Expanded(
                 child: Column(
